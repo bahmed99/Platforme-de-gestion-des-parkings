@@ -1,0 +1,20 @@
+.chart{
+    height: auto;
+    width: 400px;
+}
+.Avgpage{
+    width: 100%;
+    background-color: beige;
+    padding: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+}
+.avgtitle{
+    font-family: newfont;
+    font-size: 35px;
+    align-self: center;
+   
+}

@@ -1,0 +1,38 @@
+.parkinglistpage{
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding:100px;
+ 
+}
+
+.reservationlistpage{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 120px;
+ 
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+}
+.listitem{
+    width: 500px;
+    margin-top: 10px;
+}
+.parkingimg{
+    height:auto;
+    width: 120px;
+}
+.parkinglisttitle{ 
+    font-family: newfont;
+    font-size: 70px;
+}

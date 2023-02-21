@@ -1,0 +1,55 @@
+Intitulé du projet: EasyPark
+Le nom du sujet   : Gestion des parkings d'un campus
+
+Les autheurs: 
+- Ahmed BAHRI
+- Ilyes CHEIKH
+- Ines GARGOURI
+- Rafik REKHIS
+
+L'environnement de travail: 
+Pour la réalisation de notre application WEB, nous avons utilisé ReactJS pour l'interface graphique, ExpressJS pour la création des API et PostgresSQL comme serveur de gestion de base de données.
+
+Le projet consiste à implémenter/réaliser une application WEB qui consiste à gérer les places des parkings des campus universitaires situées dans le département de la Gironde. 
+
+Cette application permet à ses utilisateurs de voir les disponibilités des différents parkings selon le code postal de la région choisie. Ensuite, le client a le choix de faire une réservation d'une place et/ou de faire une occupation immédiate. 
+
+Plusieurs autres fonctionnalités sont disponibles sur l'application qui facilitent l'utilisation et permettent une meilleure gestion de ces parkings.
+
+
+Afin de lancer cette application, vous trouverez ci-dessous la liste des étapes à suivre pour utiliser l'application:
+1-- Il faut tout d’abord installer Docker, pour le faire aller vers ce lien https://docs.docker.com/engine/install/ubuntu/
+
+2-- Ensuite il faut installer Docker Compose, pour le faire aller vers ce lien https://docs.docker.com/compose/install/
+
+Il faut lancer le docker en tapant la commande suivante : sudo systemctl start docker
+
+3-- Sous le répertoire src taper la commande suivante pour lancer le projet : docker compose up 
+
+Remarque: Si vous avez une erreur de type "Error: connect ECONNREFUSED 172.20.0.2:5432
+    src-backend-1   |     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1283:16) {
+    src-backend-1   |   errno: -111,
+    src-backend-1   |   code: 'ECONNREFUSED',
+    src-backend-1   |   syscall: 'connect',
+    src-backend-1   |   address: '172.20.0.2',
+    src-backend-1   |   port: 5432"    , 
+    il faut retaper la commande suivante : docker compose up  
+    (c'est une erreur liée au volume de la base de données)
+
+4-- La création de la base de données se fait automatiquement, pour la remplir il faut taper dans le navigateur : http://localhost:5000/insert
+
+5-- Pour accéder à l’application il faut taper dans le navigateur : http://localhost:3000/
+
+6-- Pour se connecter à l’application en tant que utilisateur il faut utiliser les identifiants suivants : 
+    - email : user@gmail.com
+    - mot de passe : ahmed123
+
+7-- Pour se connecter à l’application en tant qu’administrateur il faut utiliser les identifiants suivants :
+    - email : admin@gmail.com
+    - mot de passe : ahmed123
+
+Remarque: Vous pouvez créez un compte utilisateur en vous rendant sur la page d’inscription http://localhost:3000/auth
+
+8-- Pour effacer la base de données il faut taper dans le navigateur : http://localhost:5000/drop
+
+9-- Pour recréer la base de données sans relancer l'application il faut taper dans le navigateur : http://localhost:5000/create

@@ -1,0 +1,97 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    
+  }
+  
+  .car-park {
+    max-width: auto;
+    margin: 20px auto;
+ 
+ 
+  }
+  
+
+  .parks {
+    margin: auto auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .place {
+
+    display: flex;
+    flex: 0 0 20%;
+    position: relative;
+  }
+  .place.place:nth-child(2n) {
+    margin-right: 10%;
+  }
+  .place input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+   
+  }
+  .place input[type=checkbox]:enabled + label {
+    background: #bada55;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+  }
+  .place input[type=checkbox]:disabled + label {
+    background: red;
+    overflow: hidden;
+  }
+  .parking_name{
+    text-align: center;
+    /* text-shadow: 2px 8px 5px gray;
+   font-family: ebrima;
+   font-weight: 500;
+   font-size: 50px; */
+  }
+ .date{
+  text-align: center;
+  text-shadow: 2px 8px 5px gray;
+ font-family: ebrima;
+ font-weight: 500;
+ font-size: 40px;
+ }
+  .place label {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 3.7rem;
+    border-radius: 5px;
+    animation-fill-mode: both;
+    color: black;
+    width:100%;
+    height:10vh;
+  }
+  .place label:before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+  }
+
+.Form-form-parking{
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px 30px 30px;
+  width: 1000px;
+  border-radius: 20px;
+  background-image: url("https://raw.githubusercontent.com/bahmed99/TradingBox/main/client/src/assets/images/signInBg.png");
+  background-size: cover;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}

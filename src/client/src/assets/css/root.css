@@ -1,0 +1,18 @@
+:root{
+    --vert:#2ea3dd;
+    --blue-ciel : #06a9f8;
+    --rouge : #ec4079;
+    --blue-2: #e4f2ff;
+    --white:#ffffff;
+    --beige:#F3EEE5;
+    --black:#000000;
+    --text-primary:#575d5c;
+    --text-secondary:#2ea3dd;
+    --bg-secondary:#F3EEE5;
+  
+  
+}
+@font-face {
+    font-family: 'newfont';
+    src: url('../font/Movie\ Title_AH.ttf');
+  }

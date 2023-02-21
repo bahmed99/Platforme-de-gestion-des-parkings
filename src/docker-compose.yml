@@ -1,0 +1,39 @@
+version: '4'
+
+services:
+  db:
+      image: postgres
+      container_name: db
+      environment:
+        POSTGRES_PASSWORD: 4600
+        POSTGRES_USER: myuser
+        POSTGRES_DB: parking
+      volumes:
+        - pgdata:/var/lib/postgresql/data/
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: "./server"
+    environment:
+      DB_HOST: db
+    volumes:
+      - /app/node_modules
+      - ./server:/app
+    ports:
+      - 5000:5000
+    depends_on:
+      - db
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      context: "./client"
+    ports:
+      - 3000:3000 
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+    depends_on:
+      - backend
+      - db
+volumes:
+  pgdata:
