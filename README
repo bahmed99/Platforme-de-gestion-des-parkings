@@ -1,20 +1,6 @@
 Intitulé du projet: EasyPark
 Le nom du sujet   : Gestion des parkings d'un campus
 
-Les autheurs: 
-- Ahmed BAHRI
-- Ilyes CHEIKH
-- Ines GARGOURI
-- Rafik REKHIS
-
-L'environnement de travail: 
-Pour la réalisation de notre application WEB, nous avons utilisé ReactJS pour l'interface graphique, ExpressJS pour la création des API et PostgresSQL comme serveur de gestion de base de données.
-
-Le projet consiste à implémenter/réaliser une application WEB qui consiste à gérer les places des parkings des campus universitaires situées dans le département de la Gironde. 
-
-Cette application permet à ses utilisateurs de voir les disponibilités des différents parkings selon le code postal de la région choisie. Ensuite, le client a le choix de faire une réservation d'une place et/ou de faire une occupation immédiate. 
-
-Plusieurs autres fonctionnalités sont disponibles sur l'application qui facilitent l'utilisation et permettent une meilleure gestion de ces parkings.
 
 
 Afin de lancer cette application, vous trouverez ci-dessous la liste des étapes à suivre pour utiliser l'application:
